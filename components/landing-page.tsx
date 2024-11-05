@@ -201,10 +201,14 @@ export function LandingPage() {
               {t.hero.title}
             </h1>
             <p className="text-xl text-gray-700">{t.hero.subtitle}</p>
-            <Button className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-6 text-lg rounded-full">
-              <Download className="mr-2" />
-              {t.cta}
-            </Button>
+            <p>
+              <Link href="https://play.google.com/store/apps/details?id=com.namudrone.fw" passHref>
+                <Button className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-6 text-lg rounded-full">
+                  <Download className="mr-2" />
+                  {t.cta}
+                </Button>
+              </Link>
+            </p>
             <p className="text-sm text-gray-700">{t.available}</p>
           </div>
         </section>
