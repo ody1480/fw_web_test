@@ -10,6 +10,8 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Globe, Download, Image as ImageIcon, Clock, Play } from "lucide-react"
 import Image from "next/image"
+import Link from 'next/link'
+
 
 interface Feature {
   title: string;
@@ -19,7 +21,8 @@ interface Feature {
 
 const content = {
   en: {
-    nav: ["Features", "How it works", "FAQ"],
+    nav: ["FAQ"],
+    // nav: ["Features", "How it works", "FAQ"],
     hero: {
       title: "Transform Your Phone with Adorable Animal Videos",
       subtitle: "Set cute animal videos as your wallpaper and wake up to heartwarming alarms",
@@ -151,7 +154,7 @@ export function LandingPage() {
   return (
     <div className="min-h-screen bg-[#E6DBCA]">
       <header className="fixed top-0 w-full bg-white/80 backdrop-blur-sm border-b z-50">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+        <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-[800px]">
           <div className="flex items-center gap-2">
             {/* <Image
               src="/logo_img_003.png"
@@ -160,16 +163,19 @@ export function LandingPage() {
               height={40}
               className="w-10 h-10"
             /> */}
-            <span className="font-bold text-xl text-pink-700">Fluffy Wall</span>
+            <span className="font-bold text-xl text-pink-700">
+              <Link href="/" className="text-pink-700 hover:text-pink-800" >Fluffy Wall</Link>
+            </span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             {t.nav.map((item: string) => (
-              <Button key={item} variant="ghost" className="text-pink-700 hover:text-pink-800 hover:bg-pink-100">
-                {item}
-              </Button>
+              // <Button key={item} variant="ghost" className="text-pink-700 hover:text-pink-800 hover:bg-pink-100">
+              //   {item}
+              // </Button>
+              <Link key={item} href="/faq" className="text-pink-700 hover:text-pink-800" >FAQ</Link>
             ))}
           </nav>
-          <DropdownMenu>
+          {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon">
                 <Globe className="w-5 h-5" />
@@ -182,14 +188,14 @@ export function LandingPage() {
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
-          </DropdownMenu>
+          </DropdownMenu> */}
         </div>
       </header>
 
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-20 text-center">
-          <div className="max-w-3xl mx-auto space-y-8">
+        <section className="container mx-auto px-4 py-10 text-center">
+          <div className="max-w-3xl mx-auto space-y-8 max-w-[800px]">
             <Image
               src="/logo_img_003.png"
               alt="Fluffy Wall Logo"
@@ -211,7 +217,7 @@ export function LandingPage() {
 
         {/* Features Section */}
         <section className="bg-white/80 backdrop-blur-sm border-y py-20">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 max-w-[800px]">
             <h2 className="text-3xl font-bold text-center text-pink-800 mb-12">
               {t.features.title}
             </h2>
@@ -232,7 +238,7 @@ export function LandingPage() {
 
         {/* App Preview Section */}
         <section className="py-20 bg-[#E6DBCA]">
-          <div className="container mx-auto px-4">
+          <div className="container mx-auto px-4 max-w-[800px]">
             <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-pink-800">
@@ -268,12 +274,13 @@ export function LandingPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-[600px] bg-pink-200 rounded-3xl overflow-hidden shadow-lg">
+              <div className="relative h-[400px] bg-pink-200 rounded-3xl overflow-hidden shadow-lg">
                 <Image
                   src="/fw_video_list_20241104.png"
                   alt="App Preview"
                   fill
                   className="object-cover"
+                  // className="max-auto"
                 />
               </div>
             </div>
@@ -282,7 +289,7 @@ export function LandingPage() {
       </main>
 
       <footer className="bg-white/80 backdrop-blur-sm border-t border-pink-200 py-12">
-        <div className="container mx-auto px-4 text-center text-gray-700">
+        <div className="container mx-auto px-4 text-center text-gray-700 max-w-[800px]">
           <p>&copy; 2024 Fluffy Wall. All rights reserved.</p>
         </div>
       </footer>
