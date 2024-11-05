@@ -2,14 +2,14 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-// import {
-//   DropdownMenu,
-//   DropdownMenuContent,
-//   DropdownMenuItem,
-//   DropdownMenuTrigger,
-// } from "@/components/ui/dropdown-menu"
-// import { Globe, Download, Image as ImageIcon, Clock, Play } from "lucide-react"
-import { Download, Image as ImageIcon, Clock, Play } from "lucide-react"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { Globe, Download, Image as ImageIcon, Clock, Play } from "lucide-react"
+// import { Download, Image as ImageIcon, Clock, Play } from "lucide-react"
 import Image from "next/image"
 import Link from 'next/link'
 
@@ -142,9 +142,9 @@ const content = {
 
 const languages = {
   en: "English",
-  es: "Español",
-  ja: "日本語",
-  ko: "한국어",
+  // es: "Español",
+  // ja: "日本語",
+  // ko: "한국어",
 }
 
 export function LandingPage() {
@@ -156,40 +156,33 @@ export function LandingPage() {
     <div className="min-h-screen bg-[#E6DBCA]">
       <header className="fixed top-0 w-full bg-white/80 backdrop-blur-sm border-b z-50">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between max-w-[800px]">
-          <div className="flex items-center gap-2">
-            {/* <Image
-              src="/logo_img_003.png"
-              alt="Fluffy Wall Logo"
-              width={40}
-              height={40}
-              className="w-10 h-10"
-            /> */}
-            <span className="font-bold text-xl text-pink-700">
-              <Link href="/" className="text-pink-700 hover:text-pink-800" >Fluffy Wall</Link>
-            </span>
-          </div>
-          <nav className="hidden md:flex items-center gap-6">
-            {t.nav.map((item: string) => (
-              // <Button key={item} variant="ghost" className="text-pink-700 hover:text-pink-800 hover:bg-pink-100">
-              //   {item}
-              // </Button>
-              <Link key={item} href="/faq" className="text-pink-700 hover:text-pink-800" >FAQ</Link>
-            ))}
-          </nav>
-          {/* <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Globe className="w-5 h-5" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent>
-              {Object.entries(languages).map(([code, name]) => (
-                <DropdownMenuItem key={code} onClick={() => setLang(code as LanguageKey)}>
-                  {name}
-                </DropdownMenuItem>
+          <span className="font-bold text-xl text-pink-700">
+            <Link href="/" className="text-pink-700 hover:text-pink-800" >Fluffy Wall</Link>
+          </span>
+          <div className="flex items-center gap-4">
+            <nav className="hidden md:flex items-center gap-6">
+              {t.nav.map((item: string) => (
+                // <Button key={item} variant="ghost" className="text-pink-700 hover:text-pink-800 hover:bg-pink-100">
+                //   {item}
+                // </Button>
+                <Link key={item} href="/faq" className="text-pink-700 hover:text-pink-800" >FAQ</Link>
               ))}
-            </DropdownMenuContent>
-          </DropdownMenu> */}
+            </nav>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Globe className="w-5 h-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                {Object.entries(languages).map(([code, name]) => (
+                  <DropdownMenuItem key={code} onClick={() => setLang(code as LanguageKey)}>
+                    {name}
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </div>
         </div>
       </header>
 

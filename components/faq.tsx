@@ -1,20 +1,20 @@
 'use client'
 
 import { useState } from "react"
-// import { Button } from "@/components/ui/button"
-// import {
-//   DropdownMenu,
-//   DropdownMenuContent,
-//   DropdownMenuItem,
-//   DropdownMenuTrigger,
-// } from "@/components/ui/dropdown-menu"
+import { Button } from "@/components/ui/button"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-// import { Globe } from "lucide-react"
+import { Globe } from "lucide-react"
 import Image from "next/image"
 import Link from 'next/link'
 
@@ -94,7 +94,7 @@ const content = {
 
 const languages = {
   en: "English",
-  ko: "한국어",
+  // ko: "한국어",
 }
 
 export function Faq() {
@@ -117,7 +117,7 @@ export function Faq() {
                 <Link key={item} href="/faq" className="text-pink-700 hover:text-pink-800">FAQ</Link>
               ))}
             </nav>
-            {/* <DropdownMenu>
+            <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Globe className="w-5 h-5" />
@@ -130,7 +130,7 @@ export function Faq() {
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
-            </DropdownMenu> */}
+            </DropdownMenu>
           </div>
         </div>
       </header>
