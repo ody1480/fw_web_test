@@ -157,7 +157,7 @@ export function Faq() {
           </section>
 
           {/* FAQ Section */}
-          <section className="bg-white/80 backdrop-blur-sm mb-20 px-10 ">
+          <section className="bg-white/80 backdrop-blur-sm mb-20 px-10">
             <Accordion type="single" collapsible className="w-full">
               {t.faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
