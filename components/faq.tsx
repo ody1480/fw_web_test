@@ -41,7 +41,7 @@ const content = {
       },
       {
         question: "How often are new videos added?",
-        answer: "We add new videos to our collection weekly."
+        answer: "There is no set period. Fluffy Wall will upload as many videos as possible, as often as possible. Uploaded videos will be announced through official SNS accounts and app notifications."
       },
       {
         question: "Is Fluffy Wall available for both iOS and Android?",
@@ -82,7 +82,7 @@ const content = {
       },
       {
         question: "새로운 비디오는 얼마나 자주 추가되나요?",
-        answer: "우리는 매주 새로운 비디오를 컬렉션에 추가합니다."
+        answer: "정해진 기간은 없습니다. Fluffy Wall은 가능한 최대한 자주 최대한 많은 동영상을 업로드할 것입니다. 업로드 동영상은 SNS 공식계정 및 앱 알람을 통해 공지됩니다."
       },
       {
         question: "Fluffy Wall은 iOS와 Android 모두에서 사용 가능한가요?",
