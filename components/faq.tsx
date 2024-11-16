@@ -55,6 +55,10 @@ const content = {
         question: "How much network usage does it take when downloading a video?",
         answer: "Most videos do not exceed 10M in size, and this specification will be maintained in the future unless there are special reasons. And, if it is not deleted from the cache, it will not be downloaded again over the network."
       },
+      {
+        question: "What rewards are there for watching ads?",
+        answer: "You can watch the video without ads for a certain period of time."
+      },
     ]
   },
   ko: {
@@ -74,19 +78,27 @@ const content = {
       },
       {
         question: "비디오 알람은 어떻게 설정하나요?",
-        answer: "비디오 알람을 설정하려면 알람 섹션으로 가서 '새 알람 추가'를 탭하고, 시간을 설정한 다음 알람이 울릴 때 재생할 비디오를 선택하세요. 반복 요일과 소리 등 다른 알람 설정도 사용자 지정할 수 있습니다."
+        answer: "비디오 알람을 설정하려면 알람 섹션으로 가서 '새 알람 추가'를 탭하고, 시간을 설정한 다음 알람이 울릴 때 재생할 비디오를 선택하세요. 반복 요일과 소리 등 다른 알람 설정도 사용자가 지정할 수 있습니다."
       },
       {
         question: "새로운 비디오는 얼마나 자주 추가되나요?",
-        answer: "우리는 매일 새로운 비디오를 컬렉션에 추가합니다. 앱의 '신규' 섹션에서 최신 추가 항목을 확인할 수 있습니다."
+        answer: "우리는 매주 새로운 비디오를 컬렉션에 추가합니다."
       },
       {
         question: "Fluffy Wall은 iOS와 Android 모두에서 사용 가능한가요?",
-        answer: "네, Fluffy Wall은 iOS와 Android 기기 모두에서 사용 가능합니다. App Store 또는 Google Play Store에서 다운로드할 수 있습니다."
+        answer: "아니요, Fluffy Wall은 현재 Android 기기에서만 사용 가능합니다. Google Play Store에서 다운로드할 수 있습니다."
       },
       {
         question: "Fluffy Wall은 얼마나 많은 저장 공간을 사용하나요?",
-        answer: "앱 자체는 상대적으로 작지만, 사용되는 저장 공간은 오프라인 사용을 위해 다운로드한 비디오의 수에 따라 다릅니다. 앱 설정에서 오프라인 비디오를 관리하여 저장 공간 사용을 제어할 수 있습니다."
+        answer: "앱 자체는 상대적으로 작지만 사용되는 저장 공간은 오프라인 사용을 위해 다운로드한 비디오 수에 따라 달라집니다. 현재 최대 캐시 크기는 90M로 설정되어 있지만 향후 변경될 수 있습니다."
+      },
+      {
+        question: "동영상을 다운로드할 때 네트워크 사용량은 얼마나 되나요?",
+        answer: "대부분의 영상은 크기가 10M를 넘지 않으며, 특별한 이유가 없는 한 앞으로도 이 사양이 유지될 예정입니다. 그리고, 캐시에서 삭제되지 않으면 네트워크를 통해 다시 다운로드되지 않습니다."
+      },
+      {
+        question: "광고를 시청하면 어떤 보상이 있나요?",
+        answer: "해당 영상을 일정 시간 동안 광고없이 볼 수 있습니다."
       }
     ]
   }
