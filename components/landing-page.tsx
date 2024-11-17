@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Globe, Download, Image as ImageIcon, Clock, Play, Twitter, Instagram, Facebook } from "lucide-react"
+import { Globe, Download, Image as ImageIcon, Clock, Play } from "lucide-react"
 // import { Download, Image as ImageIcon, Clock, Play } from "lucide-react"
 import Image from "next/image"
 import Link from 'next/link'
@@ -289,15 +289,6 @@ export function LandingPage() {
       <footer className="bg-white/80 backdrop-blur-sm border-t border-pink-200 py-12">
         <div className="container mx-auto px-4 text-center text-gray-700 max-w-[800px]">
           <div className="flex justify-center space-x-4 mb-4">
-            {/* <a href="https://twitter.com/fluffywall001" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-              <Twitter className="w-6 h-6 text-gray-600 hover:text-pink-600" />
-            </a>
-            <a href="https://instagram.com/fluffywall001" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <Instagram className="w-6 h-6 text-gray-600 hover:text-pink-600" />
-            </a>
-            <a href="https://facebook.com/fluffywall" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <Facebook className="w-6 h-6 text-gray-600 hover:text-pink-600" />
-            </a> */}
             <a href="https://twitter.com/fluffywall001" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <img src="sns_x.svg" className="w-6 h-6 text-gray-600 hover:text-pink-600" alt="X" />
             </a>
