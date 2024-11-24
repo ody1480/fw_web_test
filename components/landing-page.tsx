@@ -201,15 +201,26 @@ export function LandingPage() {
               {t.hero.title}
             </h1>
             <p className="text-xl text-gray-700">{t.hero.subtitle}</p>
-            <p>
-              <Link href="https://play.google.com/store/apps/details?id=com.namudrone.fw" passHref>
+            {/* <p> */}
+              {/* <Link href="https://play.google.com/store/apps/details?id=com.namudrone.fw" passHref>
                 <Button className="bg-pink-600 hover:bg-pink-700 text-white px-8 py-6 text-lg rounded-full">
                   <Download className="mr-2" />
                   {t.cta}
                 </Button>
-              </Link>
-            </p>
-            <p className="text-sm text-gray-700">{t.available}</p>
+              </Link> */}
+              <div className="flex justify-center space-x-4 mb-2">
+                <a href="https://play.google.com/store/apps/details?id=com.namudrone.fw" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <Image
+                      src="/google_play_001.png"
+                      alt="Fluffy Wall Logo"
+                      width={128}
+                      height={64}
+                      className="mx-auto"
+                    />
+                </a>
+              </div>           
+            {/* </p> */}
+            {/* <p className="text-sm text-gray-700">{t.available}</p> */}
           </div>
         </section>
 
@@ -243,7 +254,7 @@ export function LandingPage() {
                   Fluffy Wall in Action
                 </h2>
                 <div className="grid gap-4">
-                  <div className="bg-pink-100 p-4 rounded-lg shadow-md flex items-center gap-4">
+                  <div className="bg-pink-50 p-4 rounded-lg shadow-md flex items-center gap-4">
                     <div className="w-16 h-16 bg-pink-200 rounded-lg flex items-center justify-center">
                       <ImageIcon className="w-8 h-8 text-pink-600" />
                     </div>
@@ -252,7 +263,7 @@ export function LandingPage() {
                       <p className="text-sm text-gray-600">Choose your favorite animal video for your home screen</p>
                     </div>
                   </div>
-                  <div className="bg-pink-100 p-4 rounded-lg shadow-md flex items-center gap-4">
+                  <div className="bg-pink-50 p-4 rounded-lg shadow-md flex items-center gap-4">
                     <div className="w-16 h-16 bg-pink-200 rounded-lg flex items-center justify-center">
                       <Clock className="w-8 h-8 text-pink-600" />
                     </div>
@@ -261,7 +272,7 @@ export function LandingPage() {
                       <p className="text-sm text-gray-600">Wake up to a different cute animal video every day</p>
                     </div>
                   </div>
-                  <div className="bg-pink-100 p-4 rounded-lg shadow-md flex items-center gap-4">
+                  <div className="bg-pink-50 p-4 rounded-lg shadow-md flex items-center gap-4">
                     <div className="w-16 h-16 bg-pink-200 rounded-lg flex items-center justify-center">
                       <Play className="w-8 h-8 text-pink-600" />
                     </div>
